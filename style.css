@@ -28,13 +28,13 @@ a:hover {
 
 section {
     height: 100vh;
-    
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    scroll-snap-align: start;
+    scroll-snap-align: end;
     padding: 20px;
+    min-height: 100%;
 }
 
 .sections-wrapper {
@@ -49,6 +49,7 @@ img {
     border-radius: 50%;
     border: solid 1px black;
     height: auto;
+    object-fit: cover;
 }
 
 
@@ -58,7 +59,7 @@ h2 {
 }
 
 .info {
-    display: flex;
+    overflow-y: scroll;
 }
 
 progress {
@@ -81,8 +82,20 @@ details:hover {
     border: solid;
 }
 
-@media (max-width: 767px) {
+#social-links {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.col-md-6 {
+    max-height: 90vh;
+}
+@media (max-width: 768px) {
     img {
         width: 50%;
+    }
+    .col-md-6 {
+        max-height: 40vh;
     }
 }
