@@ -45,7 +45,7 @@ section {
 }
 
 img {
-    max-width: 100%;
+    max-width: 80%;
     border-radius: 50%;
     border: solid 1px black;
     height: auto;
