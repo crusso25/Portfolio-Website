@@ -10,7 +10,6 @@ body {
 }
 
 header {
-    position: fixed;
     width: 100%;
     text-align: center;
     padding: 5px;
@@ -29,9 +28,10 @@ a:hover {
 
 section {
     height: 100vh;
+    
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     scroll-snap-align: start;
     padding: 20px;
@@ -44,22 +44,21 @@ section {
     scroll-behavior: smooth;
 }
 
-img.profile {
-    height: 150px;
-    width: 150px;
+img {
+    max-width: 100%;
     border-radius: 50%;
     border: solid 1px black;
+    height: auto;
 }
 
-#profile {
-    padding: 2em;
+
+h2 {
+    font-size: 5vw;
+    margin-bottom: 4vh;
+}
+
+.info {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.description {
-    max-width: 50%;
 }
 
 progress {
@@ -70,17 +69,6 @@ progress {
     background-color: #f4f4f4;
 }
 
-progress::-webkit-progress-bar {
-    background-color: #f4f4f4;
-}
-
-progress::-webkit-progress-value {
-    background-color: black;
-}
-
-progress::-moz-progress-bar {
-    background-color: black;
-}
 
 details {
     display: flex;
@@ -91,4 +79,10 @@ details {
 
 details:hover {
     border: solid;
+}
+
+@media (max-width: 767px) {
+    img {
+        width: 50%;
+    }
 }
