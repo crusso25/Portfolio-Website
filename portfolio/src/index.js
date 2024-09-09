@@ -1,13 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'; // Import React Router components
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import Portfolio from './Portfolio';
+import StockPredictor from './StockPredictor';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Portfolio />
+    <Router>
+      <Routes>
+        <Route path="/" element={<Portfolio />} /> {/* Default route for Portfolio */}
+        <Route path="/predictordashboard" element={<StockPredictor />} /> {/* Route for StockPredictor */}
+      </Routes>
+    </Router>
   </React.StrictMode>
 );
 

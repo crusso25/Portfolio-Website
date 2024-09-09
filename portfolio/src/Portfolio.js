@@ -1,6 +1,7 @@
-import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import './Portfolio.css';
+import React from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./Portfolio.css";
+import { Link } from 'react-router-dom';
 
 const Portfolio = () => {
   return (
@@ -16,15 +17,23 @@ const Portfolio = () => {
       </header>
       <div className="sections-wrapper">
         <section className="container-fluid" id="about">
-          <h2>About me</h2>
+          <h1 style={{ marginBottom:"4vh" }}>About me</h1>
           <div className="d-flex">
             <div className="picture d-flex flex-column align-items-center justify-content-center">
-              <img src="/headshot.jpg" alt="Carson" id="headshot" className="profile" />
+              <img
+                src="/headshot.jpg"
+                alt="Carson"
+                id="headshot"
+                className="profile"
+              />
               <br />
               <br />
               <div className="d-flex">
                 <button className="button">
-                  <a href="https://www.linkedin.com/in/carson-russo-454302235/" className="no-link-style">
+                  <a
+                    href="https://www.linkedin.com/in/carson-russo-454302235/"
+                    className="no-link-style"
+                  >
                     <svg
                       viewBox="55.005 23.8289 333.061 333.0491"
                       width="65"
@@ -41,40 +50,72 @@ const Portfolio = () => {
                   </a>
                 </button>
                 <br />
-                <a href="/CarsonResume.pdf" target="_blank" className="icon-link">
+                <a
+                  href="/CarsonResume.pdf"
+                  target="_blank"
+                  className="icon-link"
+                >
                   <div className="d-flex flex-column">
-                    <img src="/paper-icon.png" alt="Paper Icon" className="icon" />
+                    <img
+                      src="/paper-icon.png"
+                      alt="Paper Icon"
+                      className="icon"
+                    />
                     <p>Resume</p>
                   </div>
                 </a>
               </div>
             </div>
-            <div className="info d-flex flex-column justify-content-start" style={{ marginRight: "20px" }}>
-              Hello! My name is Carson Russo, welcome to my portfolio. I am a Computer Science and Applied Discrete
-              Mathematics double major at Virginia Tech. I have a deep interest in the world of computers and software,
-              and am constantly trying to expand my knowledge of this field. In this portfolio you will find a list of
-              skills that I have used in my career thus far, along with personal projects that portray these skills.
+            <div
+              className="info d-flex flex-column justify-content-start"
+              style={{ marginRight: "20px" }}
+            >
+              Hello! My name is Carson Russo, welcome to my portfolio. I am a
+              Computer Science and Applied Discrete Mathematics double major at
+              Virginia Tech. I have a deep interest in the world of computers
+              and software, and am constantly trying to expand my knowledge of
+              this field. In this portfolio you will find a list of skills that
+              I have used in my career thus far, along with personal projects
+              that portray these skills.
             </div>
           </div>
         </section>
         <section id="projects">
-          <h2>Projects</h2>
+          <h1 style={{ marginBottom:"4vh" }}>Projects</h1>
           <div className="project-list">
             <details>
               <summary>Study Master</summary>
               <div className="d-flex">
                 <img src="/React.webp" className="small-logo" alt="React" />
-                <img src="/spring-boot.png" className="small-logo" alt="Spring Boot" />
-                <img src="/postgresql.png" className="small-logo" alt="PostgreSQL" />
+                <img
+                  src="/spring-boot.png"
+                  className="small-logo"
+                  alt="Spring Boot"
+                />
+                <img
+                  src="/postgresql.png"
+                  className="small-logo"
+                  alt="PostgreSQL"
+                />
                 <img src="/aws.png" className="small-logo" alt="AWS" />
               </div>
               <p>
-                Study Master is a full stack web application that I started to design during the summer of 2024. Study
-                Master is aimed towards college students to help them prepare for their courses and exams. A user can
-                upload their course syllabus schedule and information for exams, and Study Master will make a specified,
-                detailed study guide for all exam topics, with practice problems and feedback for all topics covered.
+                Study Master is a full stack web application that I started to
+                design during the summer of 2024. Study Master is aimed towards
+                college students to help them prepare for their courses and
+                exams. A user can upload their course syllabus schedule and
+                information for exams, and Study Master will make a specified,
+                detailed study guide for all exam topics, with practice problems
+                and feedback for all topics covered.
               </p>
-              <a href="https://www.studymaster.io" target="_blank" rel="noopener noreferrer">Website Link</a>
+              <a
+                href="https://www.studymaster.io"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Website Link
+              </a>{" "}
+              <span>Last updated: Sep 1, 2024</span>
             </details>
             <details>
               <summary>Stock Market Predictor</summary>
@@ -84,19 +125,23 @@ const Portfolio = () => {
                 <img
                   src="/scikitlearn.svg"
                   className="small-logo"
-                  style={{ objectFit: 'contain' }} // Ensures the image maintains its aspect ratio
+                  style={{ objectFit: "contain" }} // Ensures the image maintains its aspect ratio
                   alt="scikit-learn"
                 />
                 <img src="/aws.png" className="small-logo" alt="AWS" />
               </div>
-
-              <p>A trained model to predict the close value of the S&P 500. This model is early in the making, and have lots of improvements to make for higher prediction accuracy.</p>
-              <a href="">Stock Market Predictor</a>
+              <p>
+                A trained model to predict the S&P 500. This model is early in
+                the making, and I will continue to update the model for better
+                predictions and more features.
+              </p>
+              <Link to="/predictordashboard">Predictor Dashboard Link</Link>{" "}
+              <span>Last updated: Sep 3, 2024</span>
             </details>
           </div>
         </section>
         <section id="skills">
-          <h2>Skills</h2>
+          <h1 style={{ marginBottom:"4vh" }}>Skills</h1>
           <div className="skills-container">
             <div className="skills-category">
               <h3>Languages</h3>
