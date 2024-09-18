@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 const Portfolio = () => {
   return (
-    <div>
+    <div class="portfolio-container">
       <header>
         <h1>
           <nav className="navbar d-flex justify-content-around">

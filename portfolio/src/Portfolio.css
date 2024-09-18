@@ -10,6 +10,10 @@ body {
     overflow: hidden;
 }
 
+.portfolio-container {
+    font-family: "Courier Prime", monospace;
+}
+
 header {
     width: 100%;
     text-align: center;
@@ -143,18 +147,13 @@ details:hover {
     align-items: center;
     text-decoration: none;
     color: black;
-    /* Adjust text color */
     font-size: 20px;
-    /* Adjust font size */
 }
 
 .icon {
     height: 65px;
-    /* Set image icon height */
     width: 65px;
-    /* Set image icon width */
     margin-right: 10px;
-    /* Space between icon and text */
 }
 
 .project-list {
