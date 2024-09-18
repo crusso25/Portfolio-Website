@@ -26169,12 +26169,62 @@
             "Date": "Tue, 03 Sep 2024 04:00:00 GMT",
             "Predictions": 0,
             "Target": 0
+        },
+        {
+            "Date": "Wed, 04 Sep 2024 04:00:00 GMT",
+            "Predictions": 0,
+            "Target": 0
+        },
+        {
+            "Date": "Thu, 05 Sep 2024 04:00:00 GMT",
+            "Predictions": 0,
+            "Target": 0
+        },
+        {
+            "Date": "Fri, 06 Sep 2024 04:00:00 GMT",
+            "Predictions": 0,
+            "Target": 1
+        },
+        {
+            "Date": "Mon, 09 Sep 2024 04:00:00 GMT",
+            "Predictions": 0,
+            "Target": 1
+        },
+        {
+            "Date": "Tue, 10 Sep 2024 04:00:00 GMT",
+            "Predictions": 1,
+            "Target": 1
+        },
+        {
+            "Date": "Wed, 11 Sep 2024 04:00:00 GMT",
+            "Predictions": 1,
+            "Target": 1
+        },
+        {
+            "Date": "Thu, 12 Sep 2024 04:00:00 GMT",
+            "Predictions": 1,
+            "Target": 1
+        },
+        {
+            "Date": "Fri, 13 Sep 2024 04:00:00 GMT",
+            "Predictions": 0,
+            "Target": 1
+        },
+        {
+            "Date": "Mon, 16 Sep 2024 04:00:00 GMT",
+            "Predictions": 0,
+            "Target": 1
+        },
+        {
+            "Date": "Tue, 17 Sep 2024 04:00:00 GMT",
+            "Predictions": 0,
+            "Target": 1
         }
     ],
-    "precision_score": 0.5729537366548043,
+    "precision_score": 0.574468085106383,
     "prediction_counts": {
-        "0": 4391,
-        "1": 843
+        "0": 4398,
+        "1": 846
     },
     "tomorrow_prediction": "Decrease"
 }
