@@ -17,7 +17,7 @@ const Portfolio = () => {
       </header>
       <div className="sections-wrapper">
         <section className="container-fluid" id="about">
-          <h1 style={{ marginBottom:"4vh" }}>About me</h1>
+          <h1 style={{ marginBottom: "4vh" }}>About me</h1>
           <div className="d-flex">
             <div className="picture d-flex flex-column align-items-center justify-content-center">
               <img
@@ -81,7 +81,7 @@ const Portfolio = () => {
           </div>
         </section>
         <section id="projects">
-          <h1 style={{ marginBottom:"4vh" }}>Projects</h1>
+          <h1 style={{ marginBottom: "4vh" }}>Projects</h1>
           <div className="project-list">
             <details>
               <summary>Study Master</summary>
@@ -131,9 +131,7 @@ const Portfolio = () => {
                 <img src="/aws.png" className="small-logo" alt="AWS" />
               </div>
               <p>
-                A trained model to predict the S&P 500. This model is early in
-                the making, and I will continue to update the model for better
-                predictions and more features.
+                This is smaller project that I am doing to enhance my knowledge of data science. It is a work and progress and I plan on adding many more features, a demo of the dashboard can viewed by the link below.
               </p>
               <Link to="/predictordashboard">Predictor Dashboard Link</Link>{" "}
               <span>Last updated: Sep 3, 2024</span>
@@ -141,7 +139,7 @@ const Portfolio = () => {
           </div>
         </section>
         <section id="skills">
-          <h1 style={{ marginBottom:"4vh" }}>Skills</h1>
+          <h1 style={{ marginBottom: "4vh" }}>Skills</h1>
           <div className="skills-container">
             <div className="skills-category">
               <h3>Languages</h3>

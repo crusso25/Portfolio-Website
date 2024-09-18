@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './StockPredictor.css';
+import { Link } from 'react-router-dom';
 
 const StockPredictor = () => {
   const [predictions, setPredictions] = useState(null);
@@ -59,6 +59,9 @@ const StockPredictor = () => {
 
   return (
     <div className="container">
+      <Link to="/" className="back-button">
+        <button>Back to Portfolio</button>
+      </Link>
       <h1>Stock Market Predictions</h1>
       <div className="date">Today's Date: {getTodayDate()}</div>
 

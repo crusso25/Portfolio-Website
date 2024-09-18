@@ -2,9 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'; // Import React Router components
 import './index.css';
+import StockPredictor from './StockPredictor';
 import reportWebVitals from './reportWebVitals';
 import Portfolio from './Portfolio';
-import StockPredictor from './StockPredictor';
+import './StockPredictor.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
