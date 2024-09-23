@@ -131,10 +131,10 @@ const Portfolio = () => {
                 <img src="/aws.png" className="small-logo" alt="AWS" />
               </div>
               <p>
-                This is smaller project that I am doing to enhance my knowledge of data science. It is a work and progress and I plan on adding many more features, a demo of the dashboard can viewed by the link below.
+                This is a smaller project that I am working on to enhance my knowledge in data science. It is a work and progress and I plan on adding many more features, a demo of the dashboard can viewed by the link below.
               </p>
               <Link to="/predictordashboard">Predictor Dashboard Link</Link>{" "}
-              <span>Last updated: Sep 3, 2024</span>
+              <span>Last updated: Sep 18, 2024</span>
             </details>
           </div>
         </section>

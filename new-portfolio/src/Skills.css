@@ -1,0 +1,43 @@
+.section {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.skills-category {
+    width: 30%; /* Adjust the width to fit your layout */
+    margin-bottom: 20px;
+}
+
+.skills-category h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.skills-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skills-list li {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+/* Responsive layout */
+@media (max-width: 800px) {
+    .skills-category {
+        width: 100%;
+        text-align: center;
+    }
+
+    .skills-list li {
+        font-size: 14px;
+    }
+}
